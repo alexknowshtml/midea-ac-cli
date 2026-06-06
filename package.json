@@ -1,0 +1,33 @@
+{
+  "name": "midea-ac",
+  "version": "1.0.0",
+  "description": "CLI for controlling Midea air conditioners via the M-Smart LAN protocol",
+  "keywords": ["midea", "air conditioner", "ac", "hvac", "smart home", "msmart"],
+  "author": "Alex Hillman <alex@indyhall.org>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexknowshtml/midea-ac-cli.git"
+  },
+  "bin": {
+    "midea-ac": "./dist/index.js"
+  },
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "npx tsx src/index.ts"
+  },
+  "dependencies": {
+    "commander": "^12.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
