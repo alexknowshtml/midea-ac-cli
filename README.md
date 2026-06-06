@@ -109,6 +109,18 @@ Credentials are stored at `~/.midea-ac.json`:
 
 To add a device manually or swap devices, edit this file directly.
 
+## Claude Skill
+
+A Claude Code skill is included for natural language AC control ("turn off the AC", "what's the bedroom temp?").
+
+Install the skill:
+
+```bash
+cp -r skill/ ~/.claude/skills/midea-ac/
+```
+
+Then reload your Claude session. The skill maps natural language to CLI commands automatically.
+
 ## How It Works
 
 Midea ACs communicate over TCP on your local network using the M-Smart protocol. This CLI wraps [msmart-ng](https://github.com/mill1000/midea-msmart), which implements that protocol in Python.
