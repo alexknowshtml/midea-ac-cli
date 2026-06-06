@@ -17,7 +17,7 @@ Your machine must be on the same WiFi network as your AC.
 ## Install
 
 ```bash
-npm install -g midea-ac
+npm install -g github:alexknowshtml/midea-ac-cli
 ```
 
 ## Setup

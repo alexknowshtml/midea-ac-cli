@@ -18,6 +18,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "prepare": "tsc",
     "dev": "npx tsx src/index.ts"
   },
   "dependencies": {
